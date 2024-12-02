@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.resume {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: auto;
+    padding: 20mm; /* Add padding for print */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border: 2px solid black;
+    
+}
+
+header {
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(55, 55, 243);
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .resume {
+        box-shadow: none; /* Remove shadow for print */
+        margin: 0;
+        width: 100%;
+        height: auto; /* Allow content to dictate height */
+    }
+}
+h6{
+    color: rgb(34, 217, 74);
+}
+
+.contact-link{
+    display: flex;
+}
+/* #contain-body{
+    padding: 20mm;
+} */
